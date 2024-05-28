@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e9e5ad;
+    justify-content: center;
+}
+
+main{
+    border-bottom: 1px solid hwb(0 80% 20%);
+    background: white;
+    padding: 0 30px;
+    .page-title{
+        padding: 50px 0 ;
+        font-size: 40px;
+        text-align: center;
+    }
+    .content{
+        display: flex;
+    }
+    section{
+        flex:1;
+    }
+    aside{
+        min-width: 250px;
+        }
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+     thead{
+        tr{
+            border-bottom: 3px solid #aaa456;
+            th{
+                text-align: left;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                color: #666;
+            }
+        }
+     }
+    tbody{
+        tr{
+            border-bottom: 2px solid #aaa456;
+            td{
+                padding: 30px 0;
+            }
+        }
+    }
+}
+.product{
+    display: flex;
+    align-items: center;
+
+    img{
+        border-radius: 6px;
+    }
+
+    .info{
+        margin: left 20px; ;
+        .name{
+            font-size: 20px;
+        }
+        .categoria{
+            color: #aaa456;
+        }
+    }
+}
+footer {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .text-content {
+    flex-grow: 2;
+}
+
+footer .image-content {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .image-content img {
+    max-height: 100%;
+    max-width: 100%;
+}

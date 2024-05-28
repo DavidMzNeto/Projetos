@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+
+    }
+    form{
+        margin: 200px auto;
+        width: 500px;
+    }
+    input{
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 30px;
+    }
+</style>
+<body>
+    <form>
+        <h1 class="text-red-600 text-lg ml-10 font-bold">Cadastro</h1>
+        Nome: <input type="text" name="name" id="Nome" placeholder="Nome"> Sobrenome: <input type="text" name="Sobrenome" id="Sobrenome" placeholder="Sobrenome"><br>
+        Idade: <input type="text" name="age" id="idade"  placeholder="Idade"><br>
+        Email:<input type="text" name="email" id="email"  placeholder="email"><br>
+        Senha:<input type="password" name="senha" id="senha"  ><br>
+        <input type="submit" onclick="Cadastro(); return false" >        <input type="reset" value="Reset" name ="Limpar">
+
+    </form>
+    <script>
+
+        function Cadastro(){
+            var nome = document.getElementById('Nome');
+            var idade = document.getElementById('Idade');
+            var email = document.getElementById('email');
+            var senha = document.getElementById('senha');
+             if(nome != '' && idade != '' && email != '' && senha != ''){
+                location.href = "paginaPrincipal.html";
+             } else{
+                alert('campo não preenchido')
+             }
+        }
+    </script>
+</body>
+</html>
